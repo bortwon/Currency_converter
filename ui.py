@@ -35,6 +35,7 @@ class Ui_MainWindow(object):
         self.label.setStyleSheet("color: rgb(15, 14, 14)")
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.frame)
+        self.label_2.setEnabled(True)
         self.label_2.setGeometry(QtCore.QRect(250, 50, 121, 141))
         self.label_2.setText("")
         self.label_2.setPixmap(QtGui.QPixmap("data/icon_converter.png"))
@@ -51,6 +52,7 @@ class Ui_MainWindow(object):
 "border: 2px solid rgb(4, 4, 4);\n"
 "border-radius: 30;\n"
 "color: black")
+        self.input_currency.setText("")
         self.input_currency.setAlignment(QtCore.Qt.AlignCenter)
         self.input_currency.setObjectName("input_currency")
         self.input_amount = QtWidgets.QLineEdit(self.centralwidget)
@@ -65,6 +67,7 @@ class Ui_MainWindow(object):
 "border: 2px solid rgb(4, 4, 4);\n"
 "border-radius: 30;\n"
 "color: black")
+        self.input_amount.setText("")
         self.input_amount.setAlignment(QtCore.Qt.AlignCenter)
         self.input_amount.setObjectName("input_amount")
         self.output_currency = QtWidgets.QLineEdit(self.centralwidget)
@@ -79,6 +82,7 @@ class Ui_MainWindow(object):
 "border: 2px solid rgb(4, 4, 4);\n"
 "border-radius: 30;\n"
 "color: black")
+        self.output_currency.setText("")
         self.output_currency.setAlignment(QtCore.Qt.AlignCenter)
         self.output_currency.setObjectName("output_currency")
         self.output_amount = QtWidgets.QLineEdit(self.centralwidget)
@@ -93,10 +97,11 @@ class Ui_MainWindow(object):
 "border: 2px solid rgb(4, 4, 4);\n"
 "border-radius: 30;\n"
 "color: black")
+        self.output_amount.setText("")
         self.output_amount.setAlignment(QtCore.Qt.AlignCenter)
-        self.output_amount.setObjectName("lineEdit_4")
+        self.output_amount.setObjectName("output_amount")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(120, 580, 360, 61))
+        self.pushButton.setGeometry(QtCore.QRect(120, 570, 360, 61))
         font = QtGui.QFont()
         font.setFamily("Tw Cen MT")
         font.setPointSize(16)
@@ -108,13 +113,11 @@ class Ui_MainWindow(object):
 "    background-color: rgb(105, 255, 115);\n"
 "    border: 2px solid rgb(4, 4, 4);\n"
 "    border-radius: 30;\n"
-"    color: black;\n"
 "}\n"
 "QPushButton:pressed {\n"
 "    background-color: rgb(105, 255, 115);\n"
 "    border: 2px solid rgb(4, 4, 4);\n"
 "    border-radius: 30;\n"
-"    color: black;\n"
 "}")
         self.pushButton.setObjectName("pushButton")
         MainWindow.setCentralWidget(self.centralwidget)
@@ -126,10 +129,6 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.label.setText(_translate("MainWindow", "Currency Converter"))
-        self.input_currency.setText(_translate("MainWindow", ""))
-        self.input_amount.setText(_translate("MainWindow", ""))
-        self.output_currency.setText(_translate("MainWindow", ""))
-        self.output_amount.setText(_translate("MainWindow", ""))
         self.pushButton.setText(_translate("MainWindow", "Convert"))
 
 

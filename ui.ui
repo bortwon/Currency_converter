@@ -103,7 +103,7 @@ border-radius: 30;
 color: black</string>
     </property>
     <property name="text">
-     <string>1000</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -133,7 +133,7 @@ border-radius: 30;
 color: black</string>
     </property>
     <property name="text">
-     <string>1000</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -163,7 +163,7 @@ border-radius: 30;
 color: black</string>
     </property>
     <property name="text">
-     <string>1000</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -193,7 +193,7 @@ border-radius: 30;
 color: black</string>
     </property>
     <property name="text">
-     <string>1000</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -203,7 +203,7 @@ color: black</string>
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>580</y>
+      <y>570</y>
       <width>360</width>
       <height>61</height>
      </rect>
